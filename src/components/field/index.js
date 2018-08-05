@@ -514,6 +514,7 @@ export default class TextField extends PureComponent {
           <Label {...labelProps}>{label}</Label>
 
           <View style={styles.row}>
+            {this.renderAccessory()}
             {this.renderAffix('prefix', active, focused)}
 
             <TextInput
@@ -533,7 +534,6 @@ export default class TextField extends PureComponent {
             />
 
             {this.renderAffix('suffix', active, focused)}
-            {this.renderAccessory()}
           </View>
         </Animated.View>
 
