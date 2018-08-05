@@ -449,7 +449,7 @@ export default class TextField extends PureComponent {
     };
 
     let helperContainerStyle = {
-      flexDirection: 'row',
+      flexDirection: 'row-reverse',
       height: (title || limit)?
         titleFontSize * 2:
         focus.interpolate({
